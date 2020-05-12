@@ -877,3 +877,27 @@ ul {
   padding-top: 30px;
 }
 /* end footer */
+
+/* start animation mouse scroll */
+.scroller {
+  border-radius: 50%;
+  background-color: #9ea09f;
+  animation-name: scroll;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+/* end animation mouse scroll */
